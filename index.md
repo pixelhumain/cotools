@@ -11,8 +11,7 @@
 - [NEWS](https://www.communecter.org/#live) 
 - [CLASSIFIEDS](https://www.communecter.org/#annonces) 
 - [CHAT](http://chat.communecter.org) ([doc](https://wiki.communecter.org/fr/chat-de-discussions.html))
-- [API](https://www.communecter.org/api)
-    ([doc](https://wiki.communecter.org/fr/documentation-de-l%27api.html))
+- [API](https://www.communecter.org/api)([doc](https://wiki.communecter.org/fr/documentation-de-l%27api.html))
 
 Modules exist in CO but direct links are coming soon to
 - PEOPLE 
@@ -23,8 +22,8 @@ Modules exist in CO but direct links are coming soon to
 - DDA : Discuss Decide and Act ([doc](https://wiki.communecter.org/fr/espace-coop%C3%A9ratif.html))
 - SOCIAL BOOKMARKING
 - PLACES NEEDS SERVICES COMPETENCE (soon)
-- GLOOTON : GENERIC IMPORT TOOL ([doc](https://wiki.communecter.org/fr/chat-de-discussions.html))
-- BABELFISH : GENERIC Semantic translation and conversion
+- [GLOOTON](https://wiki.communecter.org/fr/chat-de-discussions.html) : GENERIC IMPORT TOOL 
+- [BABELFISH](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html) : GENERIC Semantic translation and conversion
 
 ## INSTANCES 
 > (running) on CO's base code
@@ -49,9 +48,10 @@ Modules exist in CO but direct links are coming soon to
 - [COPEDIA](http://communecter.org/co2/#interoperability.copedia) ( [doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
 
 ## OPEN SOURCE PROJECTS WE USE AND LOVE
-[PHP]()
-[MONGO DB]()
-[JQUERY]()
-[BOOTSTRAP]()
-[METEOR]()
-[NODEJS]()
+- [PHP]()
+- [MONGO DB]()
+- [JQUERY]()
+- [BOOTSTRAP]()
+- [METEOR]()
+- [NODEJS]()
+- and lots and lots and lots of pluggins !!!
