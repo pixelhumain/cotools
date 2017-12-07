@@ -10,10 +10,9 @@
 - [AGENDA](https://www.communecter.org/#agenda) 
 - [NEWS](https://www.communecter.org/#live) 
 - [CLASSIFIEDS](https://www.communecter.org/#annonces) 
-- [CHAT](http://chat.communecter.org)
-    + [doc](https://wiki.communecter.org/fr/chat-de-discussions.html)
+- [CHAT](http://chat.communecter.org) ([doc](https://wiki.communecter.org/fr/chat-de-discussions.html))
 - [API](https://www.communecter.org/api)
-    + [doc](https://wiki.communecter.org/fr/documentation-de-l%27api.html)
+    ([doc](https://wiki.communecter.org/fr/documentation-de-l%27api.html))
 
 Modules exist in CO but direct links are coming soon to
 - PEOPLE 
@@ -21,12 +20,10 @@ Modules exist in CO but direct links are coming soon to
 - EVENTS
 - PROJECTS
 - POINTS OF INTEREST
-- DDA : Discuss Decide and Act 
-    + [doc](https://wiki.communecter.org/fr/espace-coop%C3%A9ratif.html)
+- DDA : Discuss Decide and Act ([doc](https://wiki.communecter.org/fr/espace-coop%C3%A9ratif.html))
 - SOCIAL BOOKMARKING
 - PLACES NEEDS SERVICES COMPETENCE (soon)
-- GLOOTON : GENERIC IMPORT TOOL
-    + [doc](https://wiki.communecter.org/fr/chat-de-discussions.html)
+- GLOOTON : GENERIC IMPORT TOOL ([doc](https://wiki.communecter.org/fr/chat-de-discussions.html))
 - BABELFISH : GENERIC Semantic translation and conversion
 
 ## INSTANCES 
@@ -38,8 +35,7 @@ Modules exist in CO but direct links are coming soon to
 
 ## OPEN SOURCE TOOLS WE USE
 - [WEKAN](http://wekan.communecter.org)
-- [ROCKET CHAT](http://chat.communecter.org)
-    + [doc](https://wiki.communecter.org/fr/chat-de-discussions.html)
+- [ROCKET CHAT](http://chat.communecter.org) ([doc](https://wiki.communecter.org/)fr/chat-de-discussions.html)
 - [NEXTCLOUD](http://cloud.co.tools)
 - [WIKI](https://wiki.communecter.org)
 - [CRYPTOPAD](http://pad.co.tools)
@@ -49,10 +45,8 @@ Modules exist in CO but direct links are coming soon to
 
 ## CONNECTING THINGS TOGETHER
 - [COPI.concept](https://docs.google.com/presentation/d/1efQiAdOt54_XoxJaYZPazxCK0T83jdgdmer-le9NwDY/edit#slide=id.gdd654f576_0_6)
-- [INTEROPERABILITY.Alpha](communecter.org/co2/#interoperability)
-    + [doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html)
-- [COPEDIA]()
-    + [doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html)
+- [INTEROPERABILITY.Alpha](http://communecter.org/co2/#interoperability)([doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
+- [COPEDIA](http://communecter.org/co2/#interoperability.copedia) ( [doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
 
 ## OPEN SOURCE PROJECTS WE USE AND LOVE
 [PHP]()
