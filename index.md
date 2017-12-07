@@ -1,39 +1,53 @@
-## Welcome to GitHub Pages xxxxx
+# Welcome to COTOOLS 
 
-You can use the [editor on GitHub](https://github.com/pixelhumain/co.tools/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+- [CO aka COmmunecter](https://communecter.org) 
+- [COMOBI on play store](https://play.google.com/store/apps/details?id=org.communecter.mobile&hl=fr) 
+- [COMOBI](https://co-mobi.communecter.org) 
+- [COBUS](https://www.communecter.org/#cobusAfnic) 
 
-<h1>COCOCOCO</h1>
+## MODULES
+- [MOTEUR DE RECHERCHE TERRITORIAL](https://www.communecter.org/#search) 
+- [AGENDA](https://www.communecter.org/#agenda) 
+- [NEWS](https://www.communecter.org/#live) 
+- [CLASSIFIEDS](https://www.communecter.org/#annonces) 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Modules exist in CO but direct links are coming soon to
+- PEOPLE 
+- ORGANIZATIONS
+- EVENTS
+- PROJECTS
+- POINTS OF INTEREST
+- DDA : Discuss Decide and Act 
+- Social Bookmarking
+- GLOOTON : GENERIC IMPORT TOOL
+- BABELFISH : GENERIC Semantic translation and conversion
 
-### Markdown
+## INSTANCES 
+> (running) on CO's base code
+- [GRANDDIR.re](http://www.granddir.re) 
+- [NOTRAGORA](www.notragora.com)
+- [KGOUGLE.nc](kgougle.nc)
+- et bientot plein de petit **COPI** (CO sur rasPI)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## OPEN SOURCE TOOLS WE USE
+- [WEKAN](wekan.communecter.org)
+- [ROCKET CHAT](chat.communecter.org)
+- [NEXTCLOUD](cloud.co.tools)
+- [WIKI](wiki.co.tools)
+- [CRYPTOPAD](pad.co.tools)
+- [HACKMD](hackmd.co.tools)
+- [DIALOGUEA](dialoguea.co.tools)
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## CONNECTING THINGS TOGETHER
+- [COPI]()
+- [INTEROPERABILITY]()
+- [COPEDIA]()
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pixelhumain/co.tools/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## OPEN SOURCE PROJECTS WE USE AND LOVE
+[PHP]()
+[MONGO DB]()
+[JQUERY]()
+[BOOTSTRAP]()
+[METEOR]()
+[NODEJS]()
