@@ -12,6 +12,7 @@
 - [CLASSIFIEDS](https://www.communecter.org/#annonces) 
 - [CHAT](http://chat.communecter.org) ([doc](https://wiki.communecter.org/fr/chat-de-discussions.html))
 - [API](https://www.communecter.org/api)([doc](https://wiki.communecter.org/fr/documentation-de-l%27api.html))
+- [NETWORK](https://www.communecter.org/network)([doc](https://github.com/pixelhumain/communecter/wiki/Network))
 
 Modules exist in CO but direct links are coming soon to
 - PEOPLE 
