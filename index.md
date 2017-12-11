@@ -1,8 +1,7 @@
 # Welcome to COTOOLS 
 
 - [CO aka COmmunecter](https://communecter.org) 
-- [COMOBI on play store](https://play.google.com/store/apps/details?id=org.communecter.mobile&hl=fr) 
-- [COMOBI](https://co-mobi.communecter.org) 
+- [COMOBI on play store](https://play.google.com/store/apps/details?id=org.communecter.mobile&hl=fr) ([web](https://co-mobi.communecter.org)) 
 - [COBUS](https://www.communecter.org/#cobusAfnic) 
 
 ## MODULES
