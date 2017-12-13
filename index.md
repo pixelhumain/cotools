@@ -37,7 +37,7 @@ Modules exist in CO but direct links are coming soon to
 - [ROCKET CHAT](http://chat.communecter.org) ([doc](https://wiki.communecter.org/)fr/chat-de-discussions.html)
 - [NEXTCLOUD](http://cloud.co.tools)
 - [WIKI](https://wiki.communecter.org)
-- [CRYPTOPAD](http://pad.co.tools)
+- [CRYPTPAD](http://pad.co.tools)
 - [HACKMD](http://hackmd.co.tools)
 - [DIALOGUEA](http://dialoguea.co.tools)
 
