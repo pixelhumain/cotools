@@ -23,8 +23,13 @@ class DefaultController extends CommunecterController {
 
 	public function actionIndex() 
 	{
-    	$this->layout = "//layouts/empty";
-	    $this->render("index");
+    	if(Yii::app()->request->isAjaxRequest)
+        echo $controller->renderPartial("index");
+      else
+      {
+        $this->layout = "//layouts/empty";
+        $this->render("index");
+      }
   }
 
   public function actionDoc() 
