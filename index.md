@@ -1,5 +1,4 @@
 # Welcome to COTOOLS 
-
 - [CO aka COmmunecter](https://communecter.org) 
 - [COMOBI on play store](https://play.google.com/store/apps/details?id=org.communecter.mobile&hl=fr) ([web](https://co-mobi.communecter.org)) 
 - [COBUS](https://www.communecter.org/#cobusAfnic) 
@@ -10,10 +9,10 @@
 - [NEWS](https://www.communecter.org/#live) 
 - [CLASSIFIEDS](https://www.communecter.org/#annonces) 
 - [CHAT](http://chat.communecter.org) ([doc](https://wiki.communecter.org/fr/chat-de-discussions.html))
-- [API](https://www.communecter.org/api)([doc](https://wiki.communecter.org/fr/documentation-de-l%27api.html))
-- [NETWORK](https://www.communecter.org/network)([doc](https://github.com/pixelhumain/communecter/wiki/Network))
+- [API](https://www.communecter.org/api) ([doc](https://wiki.communecter.org/fr/documentation-de-l%27api.html))
+- [NETWORK](https://www.communecter.org/network) ([doc](https://github.com/pixelhumain/communecter/wiki/Network))
 
-Modules exist in CO but direct links are coming soon to
+### Modules exist in CO but direct links are coming soon to
 - PEOPLE 
 - ORGANIZATIONS
 - EVENTS
@@ -32,9 +31,9 @@ Modules exist in CO but direct links are coming soon to
 - [KGOUGLE.nc](http://kgougle.nc)
 - et bientot plein de petit **COPI** (CO sur rasPI)
 
-## OPEN SOURCE TOOLS WE USE
+## OPEN SOURCE TOOLS WE USE ([doc](https://wiki.communecter.org/fr/utiliser-les-outils-internes.html))
 - [WEKAN](http://wekan.communecter.org)
-- [ROCKET CHAT](http://chat.communecter.org) ([doc](https://wiki.communecter.org/)fr/chat-de-discussions.html)
+- [ROCKET CHAT](http://chat.communecter.org)
 - [NEXTCLOUD](http://cloud.co.tools)
 - [WIKI](https://wiki.communecter.org)
 - [CRYPTPAD](http://pad.co.tools)
@@ -44,8 +43,8 @@ Modules exist in CO but direct links are coming soon to
 
 ## CONNECTING THINGS TOGETHER
 - [COPI.concept](https://docs.google.com/presentation/d/1efQiAdOt54_XoxJaYZPazxCK0T83jdgdmer-le9NwDY/edit#slide=id.gdd654f576_0_6)
-- [INTEROPERABILITY.Alpha](http://communecter.org/co2/#interoperability)([doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
-- [COPEDIA](http://communecter.org/co2/#interoperability.copedia) ( [doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
+- [INTEROPERABILITY.Alpha](http://communecter.org/co2/#interoperability) ([doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
+- [COPEDIA](http://communecter.org/co2/#interoperability.copedia) ([doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
 
 ## OPEN SOURCE PROJECTS WE USE AND LOVE
 - [PHP]()
@@ -54,4 +53,4 @@ Modules exist in CO but direct links are coming soon to
 - [BOOTSTRAP]()
 - [METEOR]()
 - [NODEJS]()
-- and lots and lots and lots of pluggins !!!
+- and lots and lots and lots of pluggins !
