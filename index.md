@@ -13,7 +13,7 @@
 - [NETWORK](https://www.communecter.org/network) ([doc](https://github.com/pixelhumain/communecter/wiki/Network))
 
 ### Modules exist in CO but direct links are coming soon to
-- PEOPLE 
+- PEOPLE
 - ORGANIZATIONS
 - EVENTS
 - PROJECTS
@@ -29,7 +29,7 @@
 - [GRANDDIR.re](http://www.granddir.re) 
 - [NOTRAGORA](http://www.notragora.com)
 - [KGOUGLE.nc](http://kgougle.nc)
-- et bientot plein de petit **COPI** (CO sur rasPI)
+- et bientot plein de petit **COPI** ([doc](http://co.tools/CoPi))
 
 ## OPEN SOURCE TOOLS WE USE ([doc](https://wiki.communecter.org/fr/utiliser-les-outils-internes.html))
 - [WEKAN](http://wekan.communecter.org)
@@ -42,9 +42,9 @@
 
 
 ## CONNECTING THINGS TOGETHER
-- [COPI.concept](https://docs.google.com/presentation/d/1efQiAdOt54_XoxJaYZPazxCK0T83jdgdmer-le9NwDY/edit#slide=id.gdd654f576_0_6)
+- [COPI.concept](https://docs.google.com/presentation/d/1efQiAdOt54_XoxJaYZPazxCK0T83jdgdmer-le9NwDY/edit#slide=id.gdd654f576_0_6) ([doc](http://co.tools/CoPi))
 - [INTEROPERABILITY.Alpha](http://communecter.org/co2/#interoperability) ([doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
-- [COPEDIA](http://communecter.org/co2/#interoperability.copedia) ([doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
+- [COPEDIA](http://communecter.org/co2/#interoperability.copedia) ([doc](http://co.tools/interop))
 
 ## OPEN SOURCE PROJECTS WE USE AND LOVE
 - [PHP]()
