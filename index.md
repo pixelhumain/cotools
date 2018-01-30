@@ -9,7 +9,7 @@
 - [NEWS](https://www.communecter.org/#live) 
 - [CLASSIFIEDS](https://www.communecter.org/#annonces) 
 - [CHAT](http://chat.communecter.org) ([doc](https://wiki.communecter.org/fr/chat-de-discussions.html))
-- [API](https://www.communecter.org/api) ([doc](/API))
+- [API](https://www.communecter.org/api) ([doc](http://co.tools/API))
 - [NETWORK](https://www.communecter.org/network) ([doc](https://github.com/pixelhumain/communecter/wiki/Network))
 
 ### Modules exist in CO but direct links are coming soon to
