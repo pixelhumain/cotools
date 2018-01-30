@@ -41,7 +41,8 @@ The convert system will interrogate the Wikidata API to get data in JSON.
 
 The next exemple is the data for the city of Saint-Denis, capital city of Réunion island : 
 
-`https://query.wikidata.org/sparql?format=json&query=SELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3FitemDescription%20%3Fcoor%20%3Frange%20WHERE%20{%0A%20%3Fitem%20wdt%3AP131%20wd%3AQ47045.%0A%20%3Fitem%20%3Frange%20wd%3AQ47045.%0A%20%3Fitem%20wdt%3AP625%20%3Fcoor.%0A%20SERVICE%20wikibase%3Alabel%20{%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22.%20}%0A}`
+```HTTP
+https://query.wikidata.org/sparql?format=json&query=SELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3FitemDescription%20%3Fcoor%20%3Frange%20WHERE%20{%0A%20%3Fitem%20wdt%3AP131%20wd%3AQ47045.%0A%20%3Fitem%20%3Frange%20wd%3AQ47045.%0A%20%3Fitem%20wdt%3AP625%20%3Fcoor.%0A%20SERVICE%20wikibase%3Alabel%20{%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22.%20}%0A}```
 
 And convert this data in the pivot language named "PH onthology" 
 
