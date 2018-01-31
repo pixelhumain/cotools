@@ -25,9 +25,7 @@ A droite, l'affichage des données converties sur le site de Communecter ainsi q
 
 
 # We interoperate with 
-
 ## using their API 
-
 ### Wikidata 
 
 For any city, We retreive main information available on Wikidata
