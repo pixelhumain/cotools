@@ -43,8 +43,8 @@
 
 ## CONNECTING THINGS TOGETHER
 - [COPI.concept](https://docs.google.com/presentation/d/1efQiAdOt54_XoxJaYZPazxCK0T83jdgdmer-le9NwDY/edit#slide=id.gdd654f576_0_6) ([doc](http://co.tools/CoPi))
-- [INTEROPERABILITY.Alpha](http://communecter.org/co2/#interoperability) ([doc](https://wiki.communecter.org/fr/interop%C3%A9rabilit%C3%A9.html))
-- [COPEDIA](http://communecter.org/co2/#interoperability.copedia) ([doc](http://co.tools/interop))
+- [INTEROPERABILITY](http://communecter.org/co2/#interoperability) ([doc](http://co.tools/interop))
+- [COPEDIA](http://communecter.org/co2/#interoperability.copedia)
 
 ## OPEN SOURCE PROJECTS WE USE AND LOVE
 - [PHP]()
