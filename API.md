@@ -29,7 +29,8 @@ Vous avez la possibilité d'ajouter des paramètres pour peaufiner votre recherc
 ### Récupérer une entité via son identifiant
 `/ph/communecter/data/get/type/(projects || citoyens || organizations || events || news)/id/[id_entity]`
 
-Exemple : ```HTML
+Exemple :
+```HTML
 https://www.communecter.org/api/organization/get/id/57186ed894ef47210d7b242d
 ```
 
