@@ -170,13 +170,15 @@ Depuis l'API, vous avez la possibilité de convertir les données sous différen
 
 `/ph/communecter/api/convert/geojson/type/[organizations || citoyens || events || projects]?url="http://votreurl"` 
 
-Exemple : `/ph/communecter/api/convert/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/276610/
+Exemple : `/ph/communecter/api/convert/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/276610/`
+Exemple (URL) : https://www.communecter.org/api/convert/geojson/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/306808/
 
 ### Cas particuliers : les Umap
 
 L'API permet de convertir les données geojson d'une umap donné via la paramètre "url"
 
 Exemple : `/ph/communecter/api/convert/type/organizations?url=http://umap.openstreetmap.fr/fr/map/carte-pour-faire-des-tests_62176#13/44.7825/-0.3700`
+Exemple (URL) : https://www.communecter.org/api/convert/geojson/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/306808/
 
 On peut aussi mettre en paramètre l'url courte d'une umap (visible en appuyant sur le bouton partager à gauche de la umap): 
 
