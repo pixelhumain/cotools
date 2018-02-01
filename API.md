@@ -12,10 +12,12 @@ Depuis l'API vous avez la possibilité de récupérer différentes informations 
 * `[news]` News
 
 ## Récupérer toutes les entités
-
 `/api/[project || person || organization || event || need || news]/get/`
 
-Exemple : `/api/organization/get/`
+Exemple :
+```html
+https://www.communecter.org/api/organization/get
+```
 
 Pour voir la description du résultat aller dans la rubrique "Les attributs".
 
@@ -30,26 +32,29 @@ Vous avez la possibilité d'ajouter des paramètres pour peaufiner votre recherc
 `/ph/communecter/data/get/type/(projects || citoyens || organizations || events || news)/id/[id_entity]`
 
 Exemple :
-
 ```html
 https://www.communecter.org/api/organization/get/id/57186ed894ef47210d7b242d
 ```
 
 ### Rechercher par tags
-
 Vous avez la possibilité de paramétrer la recherche des entités en fonctions des tags.
 Vous pouvez ajouter plusieurs tags qui devront être séparé par une virgule.
 Par défauts, si vous avez mis plusieurs tags, il suffit pour l'entité d'avoir un de ces tags pour être affiché. Si vous souhaitez que l'entité possède tout les tags alors il faut mettre le paramètre suivant : `/multiTags/true`
 
-Exemple : 
-* `/ph/communecter/data/get/type/organizations/tags/NuitDebout`
-* `/ph/communecter/data/get/type/organizations/tags/NuitDebout,Commun`
-* `/ph/communecter/data/get/type/organizations/tags/NuitDebout,Commun/multiTags/true`
-
+Exemples : 
+```html
+https://www.communecter.org/api/organization/get?tags=nuitdebout
+https://www.communecter.org/api/organization/get?tags=education,social
+https://www.communecter.org/api/organization/get?tags=education,social/multiTags/true
+```
 
 ### Rechercher par Insee
-Si vous connaissez le code Insee de votre commune, vous pouvez faire une recherche via ce code Insee.
-Exemple : `/ph/communecter/data/get/type/organizations/insee/33402`
+Si vous connaissez le code Insee de votre commune, vous pouvez faire une recherche via ce code.
+
+Exemple :
+```html
+https://www.communecter.org/api/organization/get?insee=33402
+```
 
 ## Formats
 L'API prend en compte différents formats pour le résultat. Par défaut, c'est le format que propose Communecter.
@@ -103,22 +108,19 @@ GEOJSON
 * City
 * `[news]` News
 
-CSV 
-
+CSV
 * `[organizations]` Organisation
 
-RSS 
+RSS
 * `[news]` news
 
 JSONFEED 
 * `[news]` news
 
 ## Les attributs
-
 Ici, vous aurez la description de tout les attribues des différentes entités qui sont retournés via l'API.
 
 ### Format Communecter
-
 Exemple : 
 meta : 
 * `limit` Nombre d'entités retournée
@@ -154,7 +156,7 @@ meta :
     * `members` Liste des citoyens membres de l'entité.
     * `needs` Liste des besoins de l'entité.
 
-# Convert : Récupérer des données en onthologie PH
+## Convert : Récupérer des données en onthologie PH
 Depuis l'API, vous avez la possibilité de convertir les données sous différents format que vous possédez directement en onthologie PH.
 
 * `[geojson]` GeoJson
@@ -171,22 +173,23 @@ Depuis l'API, vous avez la possibilité de convertir les données sous différen
 * `[educecole]` Json issu de l'API de ScanR (école doctorales accrédités)
 
 ## Obtenir l'ontologie ph pour un type d'élément donnée via une url
-
 `/ph/communecter/api/convert/geojson/type/[organizations || citoyens || events || projects]?url="http://votreurl"` 
 
-Exemple : `/ph/communecter/api/convert/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/276610/`
+Exemple : 
+```html
+https://www.communecter.org/api/convert/geojson/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/306808/
+```
 
-Exemple (URL) : https://www.communecter.org/api/convert/geojson/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/306808/
+### Cas particuliers : les uMap
 
-### Cas particuliers : les Umap
+L'API permet de convertir les données geojson d'une uMap donnée via la paramètre "url".
 
-L'API permet de convertir les données geojson d'une umap donné via la paramètre "url"
+Exemple :
+```html
+https://www.communecter.org/api/convert/geojson/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/306808/
+```
 
-Exemple : `/ph/communecter/api/convert/type/organizations?url=http://umap.openstreetmap.fr/fr/map/carte-pour-faire-des-tests_62176#13/44.7825/-0.3700`
-
-Exemple (URL) : https://www.communecter.org/api/convert/geojson/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/306808/
-
-On peut aussi mettre en paramètre l'url courte d'une umap (visible en appuyant sur le bouton partager à gauche de la umap): 
+On peut aussi mettre en paramètre l'URL courte d'une umap (visible en appuyant sur le bouton partager à gauche de la umap): 
 
 Exemple : `/ph/communecter/api/convert/type/organizations?url=http://u.osmfr.org/m/62176/`
 
