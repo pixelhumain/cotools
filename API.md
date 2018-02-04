@@ -1,6 +1,8 @@
 # Documentation de l'API
 _Traduction anglaise: [Documentation of the API](https://github.com/pixelhumain/wiki-en/wiki/Documentation-of-the-API)_
 
+Accès à l'interface graphique de l'API : **[communecter.org/api](https://www.communecter.org/api/#/)**
+
 ## Get : Récupérer des informations
 Depuis l'API vous avez la possibilité de récupérer différentes informations en provenance de Communecter :
  
