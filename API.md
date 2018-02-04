@@ -239,11 +239,15 @@ On va pouvoir filtrer l'enssemble des noeuds qui sont présent dans le geoshape 
 
 ### Exemple OpenDataSoft : 
 
-`/ph/api/convert/ods?url=https://data.opendatasoft.com/api/records/1.0/search/?dataset=sirene%40public&sort=datemaj&facet=categorie&facet=proden&facet=libapen&facet=siege&facet=libreg_new&facet=saisonat&facet=libtefen&facet=depet&facet=libnj&facet=libtca&facet=liborigine&rows=30&start=0&geofilter.polygon=[geofilter]`
+```
+/ph/api/convert/ods?url=https://data.opendatasoft.com/api/records/1.0/search/?dataset=sirene%40public&sort=datemaj&facet=categorie&facet=proden&facet=libapen&facet=siege&facet=libreg_new&facet=saisonat&facet=libtefen&facet=depet&facet=libnj&facet=libtca&facet=liborigine&rows=30&start=0&geofilter.polygon=[geofilter]
+```
 
 Pour la ville de Saint-Louis, l'exemple serait : 
 
-`/ph/api/convert/ods?url=https://data.opendatasoft.com/api/records/1.0/search/?dataset=sirene%40public&sort=datemaj&facet=categorie&facet=proden&facet=libapen&facet=siege&facet=libreg_new&facet=saisonat&facet=libtefen&facet=depet&facet=libnj&facet=libtca&facet=liborigine&rows=30&start=0&geofilter.polygon=(-21.303505996763,55.403919253998),(-21.292626813288,55.391189163162),(-21.282029142394,55.381522536523),(-21.256155186265,55.392395046639),(-21.232012804782,55.387888015185),(-21.211100938923,55.390619722192),(-21.199480966855,55.382654775478),(-21.185882138486,55.385961778627),(-21.173346518752,55.389949958731),(-21.16327583783,55.399563417107),(-21.14709868917,55.405379688232),(-21.166028899095,55.414700890276),(-21.184085220909,55.432085218794),(-21.190290936422,55.440880800108),(-21.195166490948,55.462318490892),(-21.237553168259,55.459769285867),(-21.258726107298,55.463692709631),(-21.286021128961,55.455515913879),(-21.294777773557,55.419916682666),(-21.303505996763,55.403919253998)`
+```
+/ph/api/convert/ods?url=https://data.opendatasoft.com/api/records/1.0/search/?dataset=sirene%40public&sort=datemaj&facet=categorie&facet=proden&facet=libapen&facet=siege&facet=libreg_new&facet=saisonat&facet=libtefen&facet=depet&facet=libnj&facet=libtca&facet=liborigine&rows=30&start=0&geofilter.polygon=(-21.303505996763,55.403919253998),(-21.292626813288,55.391189163162),(-21.282029142394,55.381522536523),(-21.256155186265,55.392395046639),(-21.232012804782,55.387888015185),(-21.211100938923,55.390619722192),(-21.199480966855,55.382654775478),(-21.185882138486,55.385961778627),(-21.173346518752,55.389949958731),(-21.16327583783,55.399563417107),(-21.14709868917,55.405379688232),(-21.166028899095,55.414700890276),(-21.184085220909,55.432085218794),(-21.190290936422,55.440880800108),(-21.195166490948,55.462318490892),(-21.237553168259,55.459769285867),(-21.258726107298,55.463692709631),(-21.286021128961,55.455515913879),(-21.294777773557,55.419916682666),(-21.303505996763,55.403919253998)
+```
 
 On va pouvoir filtrer l'enssemble des éléments présent dans le geofilter fournit. 
 
@@ -251,15 +255,21 @@ On peut filtrer les éléments par thématique en mentionnant des refine.libapen
 
 L'exemple suivant fait la même chose que l'exemple précédent sauf qu'il filtre tous les éléments qui sont dans le secteur d'activité : Pratique dentaire
 
-`/ph/api/convert/ods?url=https://data.opendatasoft.com/api/records/1.0/search/?dataset=sirene%40public&facet=categorie&facet=proden&facet=libapen&facet=siege&facet=libreg_new&facet=saisonat&facet=libtefen&facet=depet&facet=libnj&facet=libtca&facet=liborigine&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)&refine.libapen=Pratique%20dentaire`
+```
+/ph/api/convert/ods?url=https://data.opendatasoft.com/api/records/1.0/search/?dataset=sirene%40public&facet=categorie&facet=proden&facet=libapen&facet=siege&facet=libreg_new&facet=saisonat&facet=libtefen&facet=depet&facet=libnj&facet=libtca&facet=liborigine&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)&refine.libapen=Pratique%20dentaire
+```
 
 ### Exemple Datanova : 
 
-`/ph/api/convert/datanova?url=https://datanova.laposte.fr/api/records/1.0/search/?dataset=laposte_poincont&rows=30&start=0&geofilter.polygon=[geofilter]`
+```
+/ph/api/convert/datanova?url=https://datanova.laposte.fr/api/records/1.0/search/?dataset=laposte_poincont&rows=30&start=0&geofilter.polygon=[geofilter]
+```
 
 Pour la ville de Bordeaux l'exemple serait : 
 
-`/ph/api/convert/datanova?url=https://datanova.laposte.fr/api/records/1.0/search/?dataset=laposte_poincont&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)`
+```
+/ph/api/convert/datanova?url=https://datanova.laposte.fr/api/records/1.0/search/?dataset=laposte_poincont&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)
+```
 
 On récupère l'enssemble des enseignes La Poste présent dans le geofilter donné.
 
@@ -267,17 +277,23 @@ On récupère l'enssemble des enseignes La Poste présent dans le geofilter donn
 
 L'url à passer en paramètre est du type : 
 
-`/ph/api/convert?url=https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5%2Df342%2D4223%2D9c51%2D72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%27[insee]%27%`
+```
+/ph/api/convert?url=https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5%2Df342%2D4223%2D9c51%2D72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%27[insee]%27%
+```
 
 Pour la ville de Saint-Louis, l'url serait : 
 
-`/ph/api/convert?url=https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5%2Df342%2D4223%2D9c51%2D72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%2797414%27%`
+```
+/ph/api/convert?url=https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5%2Df342%2D4223%2D9c51%2D72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%2797414%27%
+```
 
 L'essemble du procesus est le suivant : 
 
 * On demande à avoir un token : 
 
-`https://entreprise.pole-emploi.fr/connexion/oauth2/access_token?realm=%2Fpartenaire`
+```
+https://entreprise.pole-emploi.fr/connexion/oauth2/access_token?realm=%2Fpartenaire
+```
 
 avec en paramètre POST : 
 
@@ -287,11 +303,15 @@ avec en paramètre POST :
 
 Ensuite on lance la requête : 
 
-`https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5%2Df342%2D4223%2D9c51%2D72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%27[insee]%27%`
+```html
+https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5%2Df342%2D4223%2D9c51%2D72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%27[insee]%27%
+```
 
 Pour la ville de Saint-Louis : 
 
-`https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5%2Df342%2D4223%2D9c51%2D72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%2797414%27%`
+```html
+https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5%2Df342%2D4223%2D9c51%2D72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%2797414%27%
+```
 
 Il faut indiquer en paramètre POST ses identifiants du Pôle Emploi (inscription sur https://www.emploi-store-dev.fr/) et aussi mettre un token dans le HEADER : "Authorization: Bearer [token]".
 
@@ -303,35 +323,51 @@ ScanR comporte 4 jeux de données que l'on peut intéroger :
 
 * Structure de recherche publique :
 
-`/ph/api/convert/educstruct?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-structures-recherche-publiques-actives&facet=numero_national_de_structure&facet=annee_de_creation&facet=tutelles&facet=type_de_tutelle&facet=nature_de_tutelle&facet=nature_de_structure&facet=type_de_structure&facet=niveau_de_structure&facet=domaine_scientifique&facet=panel_erc&facet=theme_de_recherche&facet=commune&facet=unite_urbaine&facet=departement&facet=region&facet=pays&facet=comue&facet=region_avant_2016&rows=30&start=0&geofilter.polygon=[geofilter]`
+```
+/ph/api/convert/educstruct?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-structures-recherche-publiques-actives&facet=numero_national_de_structure&facet=annee_de_creation&facet=tutelles&facet=type_de_tutelle&facet=nature_de_tutelle&facet=nature_de_structure&facet=type_de_structure&facet=niveau_de_structure&facet=domaine_scientifique&facet=panel_erc&facet=theme_de_recherche&facet=commune&facet=unite_urbaine&facet=departement&facet=region&facet=pays&facet=comue&facet=region_avant_2016&rows=30&start=0&geofilter.polygon=[geofilter]
+```
 
 Pour la ville de Saint-Louis,l'exemple serait : 
 
-`/ph/api/convert/educstruct?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-structures-recherche-publiques-actives&facet=numero_national_de_structure&facet=annee_de_creation&facet=tutelles&facet=type_de_tutelle&facet=nature_de_tutelle&facet=nature_de_structure&facet=type_de_structure&facet=niveau_de_structure&facet=domaine_scientifique&facet=panel_erc&facet=theme_de_recherche&facet=commune&facet=unite_urbaine&facet=departement&facet=region&facet=pays&facet=comue&facet=region_avant_2016&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)`
+```
+/ph/api/convert/educstruct?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-structures-recherche-publiques-actives&facet=numero_national_de_structure&facet=annee_de_creation&facet=tutelles&facet=type_de_tutelle&facet=nature_de_tutelle&facet=nature_de_structure&facet=type_de_structure&facet=niveau_de_structure&facet=domaine_scientifique&facet=panel_erc&facet=theme_de_recherche&facet=commune&facet=unite_urbaine&facet=departement&facet=region&facet=pays&facet=comue&facet=region_avant_2016&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)
+```
 
 *  Etablissement impliqués dans la recherche : 
 
-`/ph/api/convert/educetab?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-etablissements-publics-prives-impliques-recherche-developpement&facet=siren&facet=libelle&facet=date_de_creation&facet=categorie&facet=libelle_ape&facet=tranche_etp&facet=categorie_juridique&facet=wikidata&facet=commune&facet=unite_urbaine&facet=departement&facet=region&facet=pays&facet=badge&facet=region_avant_2016&rows=30&start=0&geofilter.polygon=[geofilter]`
+```
+/ph/api/convert/educetab?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-etablissements-publics-prives-impliques-recherche-developpement&facet=siren&facet=libelle&facet=date_de_creation&facet=categorie&facet=libelle_ape&facet=tranche_etp&facet=categorie_juridique&facet=wikidata&facet=commune&facet=unite_urbaine&facet=departement&facet=region&facet=pays&facet=badge&facet=region_avant_2016&rows=30&start=0&geofilter.polygon=[geofilter]
+```
 
 Pour la ville de Bordeaux, l'exemple serait : 
 
-`/ph/api/convert/educetab?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-etablissements-publics-prives-impliques-recherche-developpement&facet=siren&facet=libelle&facet=date_de_creation&facet=categorie&facet=libelle_ape&facet=tranche_etp&facet=categorie_juridique&facet=wikidata&facet=commune&facet=unite_urbaine&facet=departement&facet=region&facet=pays&facet=badge&facet=region_avant_2016&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)`
+```
+/ph/api/convert/educetab?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-etablissements-publics-prives-impliques-recherche-developpement&facet=siren&facet=libelle&facet=date_de_creation&facet=categorie&facet=libelle_ape&facet=tranche_etp&facet=categorie_juridique&facet=wikidata&facet=commune&facet=unite_urbaine&facet=departement&facet=region&facet=pays&facet=badge&facet=region_avant_2016&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)
+```
 
 * Membres des universités de France : 
 
-`/ph/api/convert/educmembre?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-iuf-les-membres&rows=30&start=0&geofilter.polygon=[geofilter]`
+```
+/ph/api/convert/educmembre?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-iuf-les-membres&rows=30&start=0&geofilter.polygon=[geofilter]
+```
 
 Pour la ville de Bordeaux, l'exemple serait : 
 
-`/ph/api/convert/educmembre?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-iuf-les-membres&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)`
+```
+/ph/api/convert/educmembre?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-iuf-les-membres&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)
+```
 
 * Liste des écoles doctorales accréditées
 
-`/ph/api/convert/educecole?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-ecoles_doctorales_annuaire&facet=numero&facet=groupe_disciplinaire&facet=toutes_les_disciplines&facet=discipline_principale&facet=localisation&facet=liste_tous_etablissements&facet=laboratoires_rattaches&facet=annee_de_creation&facet=annee_accreditation&facet=etablissement_support&facet=liste_codes_tous_etablissements&facet=identifiants_des_laboratoires&facet=libelle_unite_urbaine&facet=libelle_departement&facet=libelle_academie&facet=libelle_region&rows=30&start=0&geofilter.polygon=[geofilter]`
+```
+/ph/api/convert/educecole?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-ecoles_doctorales_annuaire&facet=numero&facet=groupe_disciplinaire&facet=toutes_les_disciplines&facet=discipline_principale&facet=localisation&facet=liste_tous_etablissements&facet=laboratoires_rattaches&facet=annee_de_creation&facet=annee_accreditation&facet=etablissement_support&facet=liste_codes_tous_etablissements&facet=identifiants_des_laboratoires&facet=libelle_unite_urbaine&facet=libelle_departement&facet=libelle_academie&facet=libelle_region&rows=30&start=0&geofilter.polygon=[geofilter]
+```
 
 Pour la ville de Bordeaux, l'exemple serait : 
 
-`/ph/api/convert/educecole?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-ecoles_doctorales_annuaire&facet=numero&facet=groupe_disciplinaire&facet=toutes_les_disciplines&facet=discipline_principale&facet=localisation&facet=liste_tous_etablissements&facet=laboratoires_rattaches&facet=annee_de_creation&facet=annee_accreditation&facet=etablissement_support&facet=liste_codes_tous_etablissements&facet=identifiants_des_laboratoires&facet=libelle_unite_urbaine&facet=libelle_departement&facet=libelle_academie&facet=libelle_region&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)`
+```
+/ph/api/convert/educecole?url=https://data.enseignementsup-recherche.gouv.fr/api/records/1.0/search/?dataset=fr-esr-ecoles_doctorales_annuaire&facet=numero&facet=groupe_disciplinaire&facet=toutes_les_disciplines&facet=discipline_principale&facet=localisation&facet=liste_tous_etablissements&facet=laboratoires_rattaches&facet=annee_de_creation&facet=annee_accreditation&facet=etablissement_support&facet=liste_codes_tous_etablissements&facet=identifiants_des_laboratoires&facet=libelle_unite_urbaine&facet=libelle_departement&facet=libelle_academie&facet=libelle_region&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)
+```
 
 #REST Services 
 * Almost every actions could be exposed as a REST service.
