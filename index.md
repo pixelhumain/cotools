@@ -30,7 +30,7 @@
 - [GRANDDIR.re](http://www.granddir.re) 
 - [NOTRAGORA](http://www.notragora.com)
 - [KGOUGLE.nc](http://kgougle.nc)
-- et bientot plein de petit **COPI** ([doc](http://co.tools/CoPi))
+- Et bientôt plein de petits **CoPi** ([doc](http://co.tools/CoPi))
 
 ## OPEN SOURCE TOOLS WE USE ([doc](https://wiki.communecter.org/fr/utiliser-les-outils-internes.html))
 - [WEKAN](http://wekan.communecter.org)
