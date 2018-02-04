@@ -202,7 +202,9 @@ https://www.communecter.org/api/convert/geojson/type/organizations?url=http://um
 ```
 
 URL Courte :
-Exemple : `/ph/communecter/api/convert/type/organizations?url=http://u.osmfr.org/m/62176/`
+```
+/ph/communecter/api/convert/type/organizations?url=http://u.osmfr.org/m/62176/
+```
 
 ## Obtenir l'ontologie ph pour un type d'élément donnée via un fichier
 Il faut envoyer à l'API le paramètre "file" via méthode POST. (en utilisant curl ou RESTED par exemple).
