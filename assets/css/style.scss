@@ -1,4 +1,8 @@
 ---
 ---
 
-@import "{{ custom.css }}";
+@import "{{ site.theme }}";
+
+header {
+  background-color: #E5344D;
+}
