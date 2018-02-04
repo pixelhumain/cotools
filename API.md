@@ -14,9 +14,12 @@ Depuis l'API vous avez la possibilité de récupérer différentes informations 
 * `[news]` News
 
 ## Récupérer toutes les entités
-`/api/[project || person || organization || event || need || news]/get/`
+### Structure
+```markdown
+/api/[project || person || organization || event || need || news]/get/
+```
 
-Exemple :
+### Exemple
 ```html
 https://www.communecter.org/api/organization/get
 ```
@@ -50,7 +53,7 @@ https://www.communecter.org/api/organization/get?tags=education,social
 https://www.communecter.org/api/organization/get?tags=education,social/multiTags/true
 ```
 
-### Rechercher par Insee
+### Rechercher par code Insee
 Si vous connaissez le code Insee de votre commune, vous pouvez faire une recherche via ce code.
 
 Exemple :
@@ -123,8 +126,6 @@ JSONFEED
 Ici, vous aurez la description de tout les attribues des différentes entités qui sont retournés via l'API.
 
 ### Format Communecter
-Exemple : 
-meta : 
 * `limit` Nombre d'entités retournée
 * `next` url retournant la suite des entités
 * `previous` url retournant la liste précédente des entités
@@ -160,7 +161,6 @@ meta :
 
 ## Convert : Récupérer des données en onthologie PH
 Depuis l'API, vous avez la possibilité de convertir les données sous différents format que vous possédez directement en onthologie PH.
-
 * `[geojson]` GeoJson
 * `[wikipedia]` Json issu de l'API de Wikidata
 * `[datagouv]` Json issu de l'API de Data.gouv
@@ -175,31 +175,37 @@ Depuis l'API, vous avez la possibilité de convertir les données sous différen
 * `[educecole]` Json issu de l'API de ScanR (école doctorales accrédités)
 
 ## Obtenir l'ontologie ph pour un type d'élément donnée via une url
-`/ph/communecter/api/convert/geojson/type/[organizations || citoyens || events || projects]?url="http://votreurl"` 
+### Structure
+```markdown
+/ph/communecter/api/convert/geojson/type/[organizations || citoyens || events || projects]?url="http://votreurl"
+```
 
-Exemple : 
+### Exemple
 ```html
 https://www.communecter.org/api/convert/geojson/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/306808/
 ```
 
 ### Cas particuliers : les uMap
-
+#### Structure
 L'API permet de convertir les données geojson d'une uMap donnée via la paramètre "url".
+> On peut aussi mettre en paramètre l'URL courte d'une uMap (visible en appuyant sur le bouton partager à gauche de la uMap).
+> Attention pour le moment, il faut que l'url soit en "http" et non pas en "https", retirez le "s" si tel est le cas.
 
-Exemple :
+```html
+https://www.communecter.org/api/convert/geojson/type/organizations?url=[URL]
+```
+
+#### Exemples
+URL longue :
 ```html
 https://www.communecter.org/api/convert/geojson/type/organizations?url=http://umap.openstreetmap.fr/en/datalayer/306808/
 ```
 
-On peut aussi mettre en paramètre l'URL courte d'une umap (visible en appuyant sur le bouton partager à gauche de la umap): 
-
+URL Courte :
 Exemple : `/ph/communecter/api/convert/type/organizations?url=http://u.osmfr.org/m/62176/`
 
-Attention pour le moment, il faut que l'url soit en "http" et non pas en "https", retirez le "s" si tel est le cas.
-
 ## Obtenir l'ontologie ph pour un type d'élément donnée via un fichier
-
-Il faut envoyer à l'API le paramètre "file" via méthode POST. (en utilisant curl ou RESTED par exemple)
+Il faut envoyer à l'API le paramètre "file" via méthode POST. (en utilisant curl ou RESTED par exemple).
 
 ## Obtenir l'ontologie ph pour une url intérrogeant une API externe
 ```
@@ -213,11 +219,11 @@ Il faut envoyer à l'API le paramètre "file" via méthode POST. (en utilisant c
 ```
 
 #### Exemple
-Pour la ville de Saint-Louis dont le WikidataID est Q47045, l'exemple serait : 
+Ville de Saint-Louis - WikidataID = Q47045 : 
 
-`/ph/api/convert/wikipedia?url=https://www.wikidata.org/wiki/Special:EntityData/Q47045.json`
-
-On va pouvoir récupérer le wikidataID de la ville est ainsi filtrer l'enssemble des éléments qui ont pour propriété P:131 (located in the administrative territorial entity) le wikidataID de la ville.
+```
+/ph/api/convert/wikipedia?url=https://www.wikidata.org/wiki/Special:EntityData/Q47045.json
+```
 
 ### Data.gouv
 #### Structure
@@ -225,12 +231,12 @@ On va pouvoir récupérer le wikidataID de la ville est ainsi filtrer l'enssembl
 /ph/api/convert/datagouv?url=https://www.data.gouv.fr/api/1/spatial/zone/fr/town/[insee]/datasets
 ```
 #### Exemple
-Ville de Rodez - Code INSEE 12202
+Ville de Rodez - Code INSEE 12202 :
 ```
 /ph/api/convert/datagouv?url=https://www.data.gouv.fr/api/1/spatial/zone/fr/town/12202/datasets
 ```
 
-On va pouvoir ensuite obtenir l'enssemble des datasets de la ville mentionné et au final parcourir l'enssemble des données des différents jeux de données de la ville.
+On va pouvoir ensuite obtenir l'ensemble des datasets de la ville mentionnée et au final parcourir l'ensemble des différents jeux de données de la ville.
 
 ### OpenStreetMap
 #### Structure
@@ -269,27 +275,22 @@ L'exemple suivant fait la même chose que l'exemple précédent sauf qu'il filtr
 
 ### Datanova
 #### Structure
+On récupère l'ensemble des enseignes La Poste présent dans le geofilter donné.
+
 ```
 /ph/api/convert/datanova?url=https://datanova.laposte.fr/api/records/1.0/search/?dataset=laposte_poincont&rows=30&start=0&geofilter.polygon=[geofilter]
 ```
 
 #### Exemple
 Ville de Bordeaux
-
 ```
 /ph/api/convert/datanova?url=https://datanova.laposte.fr/api/records/1.0/search/?dataset=laposte_poincont&rows=30&start=0&geofilter.polygon=(44.810795852605,-0.5738778170842),(44.817148298105,-0.57643460444186),(44.823910193873,-0.58695822406613),(44.818476638462,-0.60304723869607),(44.822474304509,-0.61064859861704),(44.824937843733,-0.61415033833008),(44.835177466959,-0.61079419661495),(44.841384923705,-0.62771243191386),(44.860667021743,-0.63833642556746),(44.871658097695,-0.63105127891779),(44.86227970331,-0.61630176568479),(44.854215265872,-0.59460939385687),(44.865671076253,-0.57646019656194),(44.869188961886,-0.57608874140575),(44.909402227434,-0.58088555560083),(44.908480410411,-0.57648917779388),(44.916666965125,-0.54773554113942),(44.889099273803,-0.53553255107571),(44.869138522062,-0.54141014437767),(44.868086689933,-0.53680669655034),(44.861267174723,-0.53784686147751),(44.848134506953,-0.53761462401784),(44.842390488778,-0.5422310311368),(44.836291776079,-0.54665943781219),(44.829021270567,-0.53642317794196),(44.822772234064,-0.53766321563778),(44.813135278103,-0.55606047183132),(44.810795852605,-0.5738778170842)
 ```
 
-On récupère l'enssemble des enseignes La Poste présent dans le geofilter donné.
-
 ### Pôle Emploi
 #### Introduction
-
-L'essemble du procesus est le suivant : 
-
-* On demande à avoir un token : 
-
-```
+* On demande à avoir un token :
+```html
 https://entreprise.pole-emploi.fr/connexion/oauth2/access_token?realm=%2Fpartenaire
 ```
 
