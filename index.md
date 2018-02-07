@@ -48,10 +48,11 @@
 - [COPEDIA](http://communecter.org/co2/#interoperability.copedia)
 
 ## OPEN SOURCE PROJECTS WE USE AND LOVE
-- [PHP]()
-- [MONGO DB]()
-- [JQUERY]()
-- [BOOTSTRAP]()
-- [METEOR]()
-- [NODEJS]()
+- [PHP](http://php.net/)
+- [MONGO DB](https://www.mongodb.com/)
+- [JQUERY](https://jquery.com/)
+- [BOOTSTRAP](http://getbootstrap.com/)
+- [METEOR](https://www.meteor.com/)
+- [NODEJS](https://nodejs.org/)
+- [NOUN PROJECT](https://thenounproject.com/)
 - and lots and lots and lots of pluggins !
