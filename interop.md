@@ -41,7 +41,9 @@ The next exemple is the data for the city of Saint-Denis, capital city of Réuni
 
 And convert this data in the pivot language named "PH onthology" 
 
-`/ph/api/convert/wikipedia?url=https://www.wikidata.org/wiki/Special:EntityData/Q47045.json`
+```
+/ph/api/convert/wikipedia?url=https://www.wikidata.org/wiki/Special:EntityData/Q47045.json
+```
 
 **[Exemple Wikidata here](https://github.com/pixelhumain/wiki/wiki/Doc-de-l'API#exemple-wikidata-)**
 
@@ -126,7 +128,9 @@ To get data with the Pôle emploi's API, a token is needed.
 
 The next exemple fetch all the job offer of the city of Saint-Louis.
 
-`https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5-f342-4223-9c51-72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%2797414%27%20LIMIT%2030`
+```html
+https://api.emploi-store.fr/partenaire/infotravail/v1/datastore_search_sql?sql=SELECT%20%2A%20FROM%20%22421692f5-f342-4223-9c51-72a27dcaf51e%22%20WHERE%20%22CITY_CODE%22=%2797414%27%20LIMIT%2030
+```
 
 ### OpenDataSoft (SIREN database)
 
