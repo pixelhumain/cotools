@@ -3,6 +3,8 @@ _Traduction anglaise: [Documentation of the API](https://github.com/pixelhumain/
 
 Accès à l'interface graphique de l'API : **[communecter.org/api](https://www.communecter.org/api/#/)**
 
+![Google logo](https://www.communecter.org/assets/e8d0379f/images/docs/import.png "description API")
+
 ## Get : Récupérer des informations
 Depuis l'API vous avez la possibilité de récupérer différentes informations en provenance de Communecter :
  
