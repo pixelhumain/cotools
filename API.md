@@ -1,6 +1,6 @@
-# Documentation de l'API
 _Traduction anglaise: [Documentation of the API](https://github.com/pixelhumain/wiki-en/wiki/Documentation-of-the-API)_
 
+## Introduction
 Accès à l'interface graphique de l'API : **[communecter.org/api](https://www.communecter.org/api/#/)**
 
 ![Google logo](https://www.communecter.org/assets/e8d0379f/images/docs/import.png "description API")
