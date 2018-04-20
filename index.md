@@ -3,6 +3,8 @@
 - [COMOBI on play store](https://play.google.com/store/apps/details?id=org.communecter.mobile&hl=fr) ([web](https://co-mobi.communecter.org)) 
 - [COBUS](https://www.communecter.org/#cobusAfnic) 
 
+## - [INSTALLATION de Communecter](http://co.tools/install)
+
 ## MODULES
 - [MOTEUR DE RECHERCHE TERRITORIAL](https://www.communecter.org/#search) 
 - [AGENDA](https://www.communecter.org/#agenda) 
