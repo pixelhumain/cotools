@@ -4,6 +4,7 @@
 - [COBUS](https://www.communecter.org/#cobusAfnic) 
 
 ## [INSTALLATION de Communecter](http://co.tools/install)
+## [INTRODUCTION au code](http://co.tools/intro)
 
 ## MODULES
 - [MOTEUR DE RECHERCHE TERRITORIAL](https://www.communecter.org/#search) 
