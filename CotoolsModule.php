@@ -8,8 +8,20 @@
 */
 
 class CotoolsModule extends CWebModule {
-
+	
 	private $_assetsUrl;
+
+	private $_version = "v0.1.0";
+	private $_versionDate = "10/01/2018";
+	private $_keywords = "cotools, collaborative, tools, online, connected society, module,opensource,CO,communecter";
+	private $_description = "CO.Tools module for CO";
+	private $_pageTitle = "CO.Tools module for CO Systems";
+
+	public function getVersion(){return $this->_version;}
+	public function getVersionDate(){return $this->_versionDate;}
+	public function getKeywords(){return $this->_keywords;}
+	public function getDescription(){return $this->_description;}
+	public function getPageTitle(){return $this->_pageTitle;}
 
 	public function getAssetsUrl()
 	{
@@ -17,6 +29,11 @@ class CotoolsModule extends CWebModule {
 	        $this->_assetsUrl = Yii::app()->getAssetManager()->publish(
 	            Yii::getPathOfAlias($this->id.'.assets') );
 	    return $this->_assetsUrl;
+	}
+
+	public function getParentAssetsUrl()
+	{
+		return ( @Yii::app()->params["module"]["parent"] ) ?  Yii::app()->getModule( Yii::app()->params["module"]["parent"] )->getAssetsUrl()  : $this->module->assetsUrl;
 	}
 
 	public function beforeControllerAction($controller, $action)

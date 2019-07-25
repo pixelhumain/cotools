@@ -21,20 +21,12 @@ class DefaultController extends CommunecterController {
 	  return parent::beforeAction($action);
 	}
 
-	public function actionIndex() 
-	{
-    	if(Yii::app()->request->isAjaxRequest)
-        echo $controller->renderPartial("index");
-      else
-      {
-        $this->layout = "//layouts/empty";
-        $this->render("index");
-      }
-  }
-
-  public function actionDoc() 
+  public function actions()
   {
-      echo file_get_contents('../../modules/'.$this->module->id.'/index.md');
+      return array(
+          'index'  => 'cotools.controllers.actions.IndexAction',
+          'jsonedit'  => 'cotools.controllers.actions.JsoneditAction',
+      );
   }
-
+  
 }
