@@ -22,6 +22,14 @@ class CotoolsModule extends CWebModule {
 	public function getKeywords(){return $this->_keywords;}
 	public function getDescription(){return $this->_description;}
 	public function getPageTitle(){return $this->_pageTitle;}
+	public function setPageTitle($title){ $this->_pageTitle = $title; }
+	public function setAuthor($author){ $this->_author = $author; }
+	public function setDescription($desc){ $this->_description = $desc; }
+	public function setImage($image){ $this->_image = $image; }
+	public function setKeywords($keywords){ $this->_keywords = $keywords; }
+	public function setFavicon($favicon){ $this->_favicon = $favicon; }
+	public function setRelCanonical($relCanonical){ $this->_relCanonical = $relCanonical; }
+	public function setShare($share){ $this->_share = $share; }
 
 	public function getAssetsUrl()
 	{
