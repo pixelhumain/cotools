@@ -29,7 +29,7 @@ class CotoolsModule extends CWebModule {
 	public function setKeywords($keywords){ $this->_keywords = $keywords; }
 	public function setFavicon($favicon){ $this->_favicon = $favicon; }
 	public function setRelCanonical($relCanonical){ $this->_relCanonical = $relCanonical; }
-	public function setShare($share){ $this->_share = $share; }
+	public function setShare($share){ $this->_share = $share; } 
 
 	public function getAssetsUrl()
 	{
